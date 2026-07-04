@@ -39,7 +39,8 @@ const Navbar = () => {
                     <p>CONTACT</p>
                     <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden' />
                 </NavLink>
-                <NavLink className="border px-5 text-xs py-1 rounded-full -mt-2" to="https://admin.foreverbuy.in/" target="_blank">
+                <NavLink className="border px-5 text-xs py-1 rounded-full -mt-2" to="https://forever-vpzx.vercel.app/
+                    " target="_blank">
                     <p className="mt-1">Admin Panel</p>
                 </NavLink>
             </ul>
