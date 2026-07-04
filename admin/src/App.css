@@ -1,0 +1,22 @@
+.admin-home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+}
+
+.admin-logo {
+  width: 160px;
+  max-width: 70vw;
+}
+
+.admin-home h1 {
+  margin: 0;
+}
+
+.admin-home p {
+  margin: 0;
+}
