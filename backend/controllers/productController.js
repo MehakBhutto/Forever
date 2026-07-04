@@ -44,7 +44,7 @@ const addProduct = async (req, res) => {
 //function for list PRODUCTSs
 const listProducts = async (req, res) => {
     try{
-        const products = await productModel.find({});
+        const products = await productModel.find();
         res.json({success: true, products});
     }catch(e){
         res.json({success: false, message: "Error while listing products", error: e.message});
