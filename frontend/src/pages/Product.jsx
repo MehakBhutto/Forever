@@ -11,17 +11,14 @@ const Product = () => {
   const [productData, setProductData] = useState(false);
   const [image,setImage] = useState('')
   const [size, setSize] = useState('');
-
-  const fetchProductsData = async () => {
-
-     products.map((item)=>{
-      if(item._id === productId){
-        setProductData(item);
-        setImage(item.image[0])
-        return null;
-      }
-     })
+  
+const fetchProductsData = () => {
+  const product = products.find(item => item._id === productId);
+  if(product) {
+    setProductData(product);
+    setImage(product.image[0]);
   }
+}
 
   useEffect(()=>{
     fetchProductsData();
